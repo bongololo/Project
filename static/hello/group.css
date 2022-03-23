@@ -1,0 +1,143 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_div {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background:  url(wp3085286-voting-wallpapers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gray;
+}
+
+.center {
+    position: absolute;
+    transform: translate(-90%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    border-radius: 15px;
+    background: linear-gradient(#8bdcfc, transparent);
+}
+
+form h3 {
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding: 0px 0px 15px 0px;
+    color: white;
+}
+
+form .errors {
+    color: red;
+    /* background-color: white; */
+}
+
+.center form {
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+.center .text_field {
+    margin: 30px 0px;
+    position: relative;
+    border-bottom: 2px solid #fff;
+}
+
+.center .signUpInpunts {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: none;
+    padding: 0px 5px;
+    height: 40px;
+    padding: 0ps 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.center .signUpInpunts:focus,
+.center .signUpInpunts:active {
+    background: none;
+}
+
+.center label {
+    position: absolute;
+    top: 50%;
+    font-weight: 800;
+    left: 5px;
+    color: white;
+    pointer-events: none;
+    transform: translateY(-50%);
+    font-size: 16px;
+    transition: .5s;
+}
+
+.text_field span::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    top: 40px;
+    left: 0;
+    transition: .5s;
+    background: #1cace6;
+    height: 2px;
+}
+
+.text_field input:focus~label,
+.text_field input:valid~label {
+    top: -5px;
+    color: black;
+}
+
+.text_field input:focus~span::before,
+.text_field input:valid~span::after {
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: #1cace6;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    height: 40px;
+    margin: 0px 0px 20px 0px;
+}
+
+input[type="submit"]:hover {
+    border-color: #2691d9;
+    transition: .5s;
+}
+
+.neg_account {
+    color: #fff;
+    font-size: 18;
+    font-weight: 700;
+    padding: 8px 0px;
+}
+
+.neg_account a {
+    text-decoration: none;
+}
+
+.neg_account a:hover {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.neg_account a:visited {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #1cace6;
+}
